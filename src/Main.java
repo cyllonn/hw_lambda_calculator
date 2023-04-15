@@ -7,10 +7,7 @@ public class Main {
         int b = calc.minus.apply(1,1);
         int c = calc.devide.apply(a , b); //при делении на ноль программа заканивается ошибкой
         calc.println.accept(c);
-        OnTaskDoneListener listener = System.out::println;
-        OnTaskErrorListener errorListener = System.out::println;
-        Worker worker = new Worker(listener, errorListener);
-        worker.start(33);
+      
     }
 
 }
